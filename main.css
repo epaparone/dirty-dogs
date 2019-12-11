@@ -1,0 +1,236 @@
+/* CSS reset: 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Base Styling */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open-sans', sans-serif;
+    color: #555559;
+}
+
+nav {
+    padding: 30px 0;
+    text-align: center;
+}
+
+button {
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #286782;
+    color: white;
+}
+
+/* Module Styling */
+header {
+    width: 100%;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 1px 2px 3px #f0f0f0;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 1px 2px 3px #f0f0f0;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 1px 2px 3px #f0f0f0;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.insta-link {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+.photo-grid {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.overlay {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.1)
+      );
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px 100px 20px;
+    background-color: #fbfafa;
+}
+
+
+#beef, #vegan, #vegetarian {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 5%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #efefef;
+}
+
+
+/* Text & Image Styling */
+h1 {
+    width: 500px;
+    display: block;
+    margin: 30px auto 60px auto;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    display: inline-block;
+    padding: 0 0 14px 7px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h3 {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+p {
+    display: block;
+    width: 70%;
+    margin-left: 28px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+.top-nav li {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+aside, .footer-nav li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+aside {
+    margin-left: 10px;
+}
+
+.footer-nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.nav-dec {
+    border-left: solid grey 1px;
+}
+
+#insta-icon {
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.grid-pic {
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+#dog-icon {
+    display: block;
+    margin: 10px auto;
+    width: 60px;
+}
+
+.menu-img {
+    width: 50%;
+    display: inline-block;
+}
+
+.dash-dec {
+    display: inline-block;
+    width: 17px;
+    padding-bottom: 5px;
+}
